@@ -1,0 +1,27 @@
+.input {
+  padding: 18px 33px;
+  width: 100%;
+  max-width: 310px;
+  border-radius: 32px;
+  border: 2px solid var(--color-secondary-gray);
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-white);
+  margin: 0 auto;
+  @media screen and (max-width: $bp-tablet) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+.input:focus {
+  background-color: var(--color-secondary-gray);
+  outline: none;
+  color: var(--color-primary-white);
+}
+input::placeholder {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-primary-white);
+}

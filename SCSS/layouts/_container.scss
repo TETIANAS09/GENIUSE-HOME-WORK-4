@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media screen and (max-width: $bp-desktop) {
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+  }
+  @media screen and (max-width: $bp-tablet) {
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+  }
+  @media screen and (max-width: $bp-mobile) {
+    .container {
+      max-width: none;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.contacts-section {
+  margin-bottom: 96px;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 0px;
+  }
+  &__container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: "Play";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #011c44;
+    text-align: center;
+    margin-bottom: 48px;
+    @media screen and (max-width: $bp-tablet) {
+      font-family: "Roboto";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &__form-map {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__map {
+    display: flex;
+    width: 605px;
+    height: 481px;
+    border-radius: 32px;
+    order: 2;
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 100vh;
+    }
+  }
+}

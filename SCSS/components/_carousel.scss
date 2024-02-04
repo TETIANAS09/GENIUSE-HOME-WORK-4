@@ -1,0 +1,87 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1064px;
+  max-height: 465px;
+  overflow-x: hidden;
+
+  &__container {
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $bp-mobile) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__slide {
+    position: relative;
+    display: flex;
+    border-radius: 4px 120px 4px 120px;
+    background-repeat: no-repeat;
+    width: 344px;
+    height: 456px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 100%;
+      max-width: 320px;
+      height: 416px;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: $bp-tablet) {
+        width: 100%;
+        max-width: 420px;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 344px;
+    height: 456px;
+    border-radius: 4px 120px 4px 120px;
+  }
+
+  &__shadow {
+    position: absolute;
+    width: 344px;
+    height: 456px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+    );
+    border-radius: 4px 120px 4px 120px;
+    z-index: 4;
+  }
+
+  &__card-name {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 152px;
+    margin-bottom: 0;
+    bottom: 34px;
+    right: 64px;
+    z-index: 4;
+
+    @media screen and (max-width: $bp-mobile) {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+.swiper-wrapper {
+  max-width: 100%;
+  max-height: 465px;
+  position: relative;
+}

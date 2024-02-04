@@ -1,0 +1,66 @@
+.cards-folder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 56px;
+  flex-shrink: 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  &__cards {
+    display: flex;
+    height: 181px;
+    width: 316px;
+    border-radius: 32px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+    padding: 24px 32px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $bp-desktop) {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  &__mini-icon {
+    fill: var(--color-primary-light);
+    display: flex;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+  }
+  &__blok {
+    display: flex;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    line-height: 24px;
+    margin-bottom: 0;
+    text-align: center;
+    flex-shrink: 0;
+  }
+}

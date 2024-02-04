@@ -1,0 +1,124 @@
+.header {
+  position: absolute;
+  width: 100%;
+  min-height: 106px;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 32px 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25));
+  backdrop-filter: blur(5px);
+  z-index: 10;
+
+  @media screen and (max-width: $bp-tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: none;
+    background-image: none;
+    padding: 0;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      min-width: 100%;
+    }
+  }
+  &__logo {
+    fill: var(--color-primary-light);
+    max-width: 74px;
+    height: 42px;
+    align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 74px;
+      padding-top: 16px;
+      justify-content: flex-end;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 40px;
+
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: space-between;
+      max-width: 100%;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+
+    gap: 32px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__link {
+    color: var(--color-primary-dark);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    list-style: none;
+    transition-duration: 0.2s;
+  }
+  &__link:hover {
+    color: var(--color-primary-light);
+  }
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+  }
+  &__icon:hover {
+    fill: var(--color-primary-light);
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      right: 42px;
+    }
+  }
+  &__icon-burger {
+    fill: var(--color-primary-white);
+    width: 20px;
+    height: 20px;
+  }
+}

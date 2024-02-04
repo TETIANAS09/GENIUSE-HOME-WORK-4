@@ -1,0 +1,33 @@
+.our-services {
+  margin-bottom: 96px;
+  width: 100%;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-family: "Play";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-primary-dark);
+    text-align: center;
+    margin-bottom: 48px;
+    text-align: center;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      color: var(--color-primary-dark);
+      text-align: center;
+      justify-content: center;
+      font-family: "Roboto";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+  }
+}
